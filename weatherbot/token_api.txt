@@ -1,0 +1,8 @@
+Telegram token: 
+949356860:AAG9yeUR4wG5LlyVyNIMwUFM-gKixyQfWVQ
+
+Rapid chatbot ApiKey:
+752e613ee9mshba3aae95c66c821p15aa5djsn644dc8fb6e9f
+
+OpenWeatherMap ApiKey:
+8f418eec31daa053b149f4363269e47d
