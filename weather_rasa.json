@@ -1,0 +1,1072 @@
+{
+  "rasa_nlu_data": {
+    "rf": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "zh_cn",
+        "synonyms": ["Chinese", "Chines", "chines", "chinese"]
+      },
+      {
+        "value": "en",
+        "synonyms": ["English", "english"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+
+      {
+        "text": "what can you do",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "what can i ask",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "what should i do right now",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "how can you help me",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "how should i use this",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "how should i search weather",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "where should i start",
+        "intent": "ask_explanation",
+        "entities": []
+      },
+      {
+        "text": "I want to set languages first",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "languages",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "set languages first",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "languages",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "how many languages are available",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "languages",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "how many languages could choose",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "languages",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "what are alternative languages ",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "languages",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "what are supported languages could choose",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": "languages",
+            "entity": "restriction"
+          }
+        ]
+      },
+
+      {
+        "text": "how can i set units ",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "units",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "how to set units ",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "units",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "list all possible units ",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "units",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "list units ",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "units",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "which units are available for me",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "units",
+            "entity": "restriction"
+          }
+        ]
+      },
+      {
+        "text": "which units can be chose",
+        "intent": "ask_explanation",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "units",
+            "entity": "restriction"
+          }
+        ]
+      },
+
+
+      {
+        "text": "set chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "set language as chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "show me result in chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "give me feedback in chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "give description with chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "in chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 3,
+            "end": 10,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "show chinese ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "chinese",
+            "entity": "lang"
+          }
+        ]
+      },
+      {
+        "text": "set metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "set unit as metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "set temp as metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "in metric",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "give temperature with metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "show temp in metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "i want result in metric ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "set imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "imperial",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "set unit as imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "set temp as imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "metric",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "imperial",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "give result in imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "imperial",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "show me the temp with imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "imperial",
+            "entity": "unit"
+          }
+        ]
+      },
+      {
+        "text": "i want to get temp with imperial ",
+        "intent": "add_restriction",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "imperial",
+            "entity": "unit"
+          }
+        ]
+      },
+
+      {
+        "text": "start searching",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "please start searching directly",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "searching directly",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "search weather directly",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "i want to search directly",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "i don't want to set anything",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "i don't need to set languages or units",
+        "intent": "start_searching",
+        "entities": []
+      },
+      {
+        "text": "no need to set languages or unit",
+        "intent": "start_searching",
+        "entities": []
+      },
+
+
+      {
+        "text": "i want to get the weather in new york and beijing ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "i want to know the weather in london, new york, and beijing ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "give me the weather in cape town, south africa ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "show me the weather in sydney, australia ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "how about the weather in los angeles,us ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "check the weather in london,gb and paris,fr ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "find the weather in wuhan, shanghai, beijing, and guangzhou ",
+        "intent": "search_weather",
+        "entities": []
+      },
+      {
+        "text": "show the weather at latitude 42.19 and longitude - 8.64 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "42.19",
+            "entity": "lat"
+          },
+          {
+            "start": 51,
+            "end": 55,
+            "value": "8.64",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "how about weather at lat: 48.86 and lon: 2.35 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "48.86",
+            "entity": "lat"
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "value": "2.35",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "check weather at - 33.93, 18.42 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "33.93",
+            "entity": "lat"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "value": "18.42",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "search the weather at 22.28, 114.16 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "22.28",
+            "entity": "lat"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "114.16",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "give me the weather at - 74, 5 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 25,
+            "end": 27,
+            "value": "74",
+            "entity": "lat"
+          },
+          {
+            "start": 29,
+            "end": 30,
+            "value": "5",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "check the weather at - 10, - 5 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 23,
+            "end": 25,
+            "value": "10",
+            "entity": "lat"
+          },
+          {
+            "start": 29,
+            "end": 30,
+            "value": "5",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "the weather at 49, 2 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 15,
+            "end": 17,
+            "value": "49",
+            "entity": "lat"
+          },
+          {
+            "start": 19,
+            "end": 20,
+            "value": "2",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "the weather at 4.9, 23 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "4.9",
+            "entity": "lat"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "value": "23",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "the weather at 20, 2.3 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 15,
+            "end": 17,
+            "value": "20",
+            "entity": "lat"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "2.35",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "show the weather at 40, - 10 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 22,
+            "value": "40",
+            "entity": "lat"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "10",
+            "entity": "lon"
+          }
+        ]
+      },
+      {
+        "text": "give me the weather at latitude: 35.68 and longitude: 139.76 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "35.68",
+            "entity": "lat"
+          },
+          {
+            "start": 54,
+            "end": 60,
+            "value": "139.76",
+            "entity": "lon"
+          }
+        ]
+      },
+
+      {
+        "text": "weather at 90012 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "90012",
+            "entity": "postal"
+          }
+        ]
+      },
+      {
+        "text": "i want weather at 95128",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "90016",
+            "entity": "postal"
+          }
+        ]
+      },
+      {
+        "text": "give the weather at 98195 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "90012",
+            "entity": "postal"
+          }
+        ]
+      },
+      {
+        "text": "at 10019 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "10019",
+            "entity": "postal"
+          }
+        ]
+      },
+      {
+        "text": "check weather at 89109 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "89109",
+            "entity": "postal"
+          }
+        ]
+      },
+      {
+        "text": "show me the weather at 85721 ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "85721",
+            "entity": "postal"
+          }
+        ]
+      },
+      {
+        "text": "i want to know the weather at 77005,tx ",
+        "intent": "search_weather",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "77005",
+            "entity": "postal"
+          }
+        ]
+      },
+
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "thx",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "perfect",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i don't think so",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i don't think this is what i want",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "this is incorrect",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "that's not i want",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i think it is wrong",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "this can't be right",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "i think you misunderstood what i meant",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "restart",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "i want to check another city",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "restart search",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "i change my mind",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "show me the weather of another place",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "please search another place's weather",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "search another city's weather",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "search another place",
+        "intent": "ask_else",
+        "entities": []
+      },
+      {
+        "text": "exit",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}
