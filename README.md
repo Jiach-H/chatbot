@@ -2,9 +2,12 @@
 
 This is a Chatbot project. The goal of this project is to enable chatbot to communicate with users using natural language. This weatherbot could help people to search the weather of some cities or places all around world and get a brief information about the weather as feedback.
 
+### Demo Vedio
+Here is a demo vedio which shows how the chatbot works:[*YouTube Link*]()
+
 ## Getting Started
 
-Build a telegram bot by talking to [*BotFather*](https://telegram.me/BotFather) and input **/newbot** and then follow the steps it ask to create new bot. Afterthat, copy your token and replace the TOKEN string in chatbotMain.py, line 22. [*Here is a introduction for BotFather.*](https://core.telegram.org/bots#6-botfather)
+Build a telegram bot by talking to [*BotFather*](https://telegram.me/BotFather) and input **/newbot** and then follow the steps it ask to create new bot. Afterthat, copy your token and replace the TOKEN string in chatbotMain.py, line 22. [Here is a introduction for BotFather.](https://core.telegram.org/bots#6-botfather)
 
 ### Environments
 Install Python 3.7 with Anaconda and then use conda to create a virtual environment clone from base as:
@@ -21,16 +24,35 @@ Replace myenv with the name of the new environment.
 ### Installation
 Please install all of the additional packages under new environment.
 
-Install spacy with midsize English Models:
+[Install spacy](https://spacy.io/usage/) with midsize English Models:
 ```
 pip install -U spacy
 python -m spacy download en_core_web_md
+python -m spacy link en_core_web_md en
 ```
-Install rasa-nlu:
+##### Usage
+link the "en_core_web_md" as "en" then we could use
 ```
-pip install rasa-nlu
+nlp = spacy.load("en")
 ```
-Install pycountry:
+to load en_core_web_md directly.
+
+[Install rasa_nlu](https://legacy-docs.rasa.com/docs/nlu/0.11.4/installation/):
+```
+pip install rasa_nlu
+```
+##### Usage
+Put the "config_spacy.yml" and "weather_rasa.json" under the same folder as the chatbotMain.py file
+Then using following code to train a new interpreter to recognize the intent of input message and extract partial Name Entities for the program process.
+```
+# Create a trainer that uses this config
+trainer = Trainer(config.load("config_spacy.yml"))
+# Load the training data
+training_data = load_data('weather_rasa.json')
+# Create an interpreter by training the model
+interpreter = trainer.train(training_data)
+```
+[Install pycountry](https://pypi.org/project/pycountry/):
 ```
 pip install pycountry
 ```
