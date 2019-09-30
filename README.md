@@ -64,6 +64,6 @@ interpreter = trainer.train(training_data)
 ## Running the tests
 After create the new bot on telegram and replace the new token in the chatbotMain.py, simply run the chatbotMain.py and wait for a few minutes to let the program trainning a new rasa_nlu model. Then chat with it.
 
-**Please input correct city and country names, the program is not able to recognize the place with incorrect names.**
-**When you want to search with latitude an longitude, please separate the negative sign with numbers in order to get correct value.**
-**The search by zipcode usage is only available for US postal code, the program connot recgonize other countries' postal codes.**
+** Please input correct city and country names, the program is not able to recognize the place with incorrect names.**
+** When you want to search with latitude an longitude, please separate the negative sign with numbers in order to get correct value.**
+** The search by zipcode usage is only available for US postal code, the program connot recgonize other countries' postal codes.**
